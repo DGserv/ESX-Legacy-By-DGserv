@@ -1,0 +1,350 @@
+{
+    "$meta": {
+        "label": "Lithuanian",
+        "humanizer_language": "lt"
+    },
+    "restarter": {
+        "start_timeout": "nepavyko paleisti",
+        "crash_detected": "aptiktas serverio nulūžimas",
+        "hang_detected": "aptiktas serverio pakibimas",
+        "partial_hang_warn": "Dėl pakibimo, serveris persijungs automatiškai po 1 min. Atsijunkite nedelsiant.",
+        "partial_hang_warn_discord": "Dėl pakibimo, **%{servername}** serveris persijungs po 1 min.",
+        "schedule_reason": "automatinis %{time} perkrovimas",
+        "schedule_warn": "Serveris persikraus už %{smart_count} min. Prašome atsijungti. |||| Serveris persikraus už %{smart_count} min. Prašome atsijungti.",
+        "schedule_warn_discord": "**%{servername}** automatiškai persikraus už %{smart_count} min. |||| **%{servername}** automatiškai persikraus už %{smart_count} min."
+    },
+    "ban_messages": {
+        "kick_temporary": "(%{author}) Buvote užblokuotas iš serverio dėl \"%{reason}\". Blokavimas bus baigtas: %{expiration}.",
+        "kick_permanent": "(%{author}) Buvote užblokuotas iš serverio visam laikui dėl \"%{reason}\".",
+        "reject": {
+            "title_permanent": "You have been permanently banned from this server.",
+            "title_temporary": "You have been temporarily banned from this server.",
+            "label_expiration": "Your ban will expire in",
+            "label_date": "Ban Date",
+            "label_author": "Banned by",
+            "label_reason": "Ban Reason",
+            "label_id": "Ban ID",
+            "note_multiple_bans": "Note: you have more than one active ban on your identifiers."
+        }
+    },
+    "whitelist_messages": {
+        "admin_only": {
+            "mode_title": "This server is in <strong>Admin-only</strong> mode.",
+            "insufficient_ids": "You do not have <code>discord</code> or <code>fivem</code> identifiers, and at least one of them is required to validate if you are a txAdmin administrator.",
+            "deny_message": "Your identifiers are not assigned to any txAdmin administrator."
+        },
+        "guild_member": {
+            "mode_title": "This server is in <strong>Discord Guild Member Whitelist</strong> mode.",
+            "insufficient_ids": "You do not have the <code>discord</code> identifier, which is required to validate if you have joined our Discord Guild. Please open Discord and try again.",
+            "deny_title": "You are required to join our Discord Guild to connect.",
+            "deny_message": "Please join the guild %{guildname} then try again."
+        },
+        "guild_roles": {
+            "mode_title": "This server is in <strong>Discord Role Whitelist</strong> mode.",
+            "insufficient_ids": "You do not have the <code>discord</code> identifier, which is required to validate if you have joined our Discord Guild. Please open Discord and try again.",
+            "deny_notmember_title": "You are required to join our Discord Guild to connect.",
+            "deny_notmember_message": "Please join %{guildname}, get one of the required roles, then try again.",
+            "deny_noroles_title": "You do not have a whitelisted role required to join.",
+            "deny_noroles_message": "To join this server you are required to have at least one of the whitelisted roles on the guild %{guildname}."
+        },
+        "approved_license": {
+            "mode_title": "This server is in <strong>License Whitelist</strong> mode.",
+            "insufficient_ids": "You do not have the <code>license</code> identifier, which means the server has <code>sv_lan</code> enabled. If you are the server owner, you can disable it in the <code>server.cfg</code> file.",
+            "deny_title": "You are not whitelisted to join this server.",
+            "request_id_label": "Request ID"
+        }
+    },
+    "server_actions": {
+        "restarting": "Serverio perkrovimas (%{reason}).",
+        "restarting_discord": "**%{servername}** yra perkraunamas (%{reason}).",
+        "stopping": "Serverio išjungiamas (%{reason}).",
+        "stopping_discord": "**%{servername}** yra išjungiamas (%{reason}).",
+        "spawning_discord": "**%{servername}** yra įjungiamas."
+    },
+    "nui_warning": {
+        "title": "ĮSPĖJIMAS",
+        "warned_by": "Įspėjimą skyrė:",
+        "instruction": "Laikykite [SPACE] 10 sekundžių, kad išjungtum šį pranešimą."
+    },
+    "nui_menu": {
+        "misc": {
+            "help_message": "txAdmin Meniu iįjungtas, rašykite /tx norėdami jį atidaryti.\nMygtuką galite priskirti ar pakeisti [Game Settings > Key Bindings > FiveM > Menu: Open Main Page].",
+            "menu_not_allowed": "Jūsų identifikavimas txAdmin sistemai nebuvo rastas.\nJei esate užregistruotas txAdmin sistemoje, eikite į Admin Manager ir įsitikinkite, kad jūsų atpažinimas išsaugotas.",
+            "no_perms": "Neturite tam teisių.",
+            "unknown_error": "Nežinoma klaida.",
+            "not_enabled": "txAdmin meniu nėra įjungtas! Tai galite padaryti per txAdmin nustatymų (settings) puslapį.",
+            "announcement_title": "Serverio pranešimas nuo: %{author}:",
+            "dialog_empty_input": "Turite užpildyti įvesties laukelius.",
+            "directmessage_title": "DM from admin %{author}:"
+        },
+        "frozen": {
+            "froze_player": "Užšaldėte žaidėją!",
+            "unfroze_player": "Atšaldėte žaidėją!",
+            "was_frozen": "Serverio administratorius jus užšaldė!"
+        },
+        "common": {
+            "cancel": "Atšaukti",
+            "submit": "Patvirtinti",
+            "error": "Įvyko klaida",
+            "copied": "Nukopijuota."
+        },
+        "page_main": {
+            "tooltips": {
+                "tooltip_1": "Naudokite %{key} norėdami pakeisti puslapį, rodyklių mygtukus norėdami naviguoti meniu pasirinkimus.",
+                "tooltip_2": "Kai kurie meniu pasirinkimai gali būti pakeisti naudojant kairės ir dešinės rodyklių mygtukus."
+            },
+            "player_mode": {
+                "title": "Žaidėjo rėžimas",
+                "noclip": {
+                    "title": "NoClip",
+                    "label": "Skraidymas",
+                    "success": "Skraidymas įjungtas"
+                },
+                "godmode": {
+                    "title": "God",
+                    "label": "Nemirtingumas",
+                    "success": "Nemirtingumas įjungtas"
+                },
+                "superjump": {
+                    "title": "Super Jump",
+                    "label": "Toggle super jump mode, the player will also run faster",
+                    "success": "Super Jump enabled"
+                },
+                "normal": {
+                    "title": "Normal",
+                    "label": "Numatytasis rėžimas",
+                    "success": "Grįžote į numatytąjį rėžimą."
+                }
+            },
+            "teleport": {
+                "title": "Teleport",
+                "generic_success": "Pakeisti savo poziciją!",
+                "waypoint": {
+                    "title": "Waypoint",
+                    "label": "Nusikelkite į pažymėtą žemėlapyje vietą",
+                    "error": "Pirma pažymėkite vietą žemėlapyje."
+                },
+                "coords": {
+                    "title": "Koordinatės",
+                    "label": "Persikelkite į įvestas koordinates",
+                    "dialog_title": "Persikelti",
+                    "dialog_desc": "Įveskite x, y, z koordinates į kurias norite nusikelti.",
+                    "dialog_error": "Netinkamos koordinatės, tinkamas formatas: 111, 222, 33"
+                },
+                "back": {
+                    "title": "Grįžti",
+                    "label": "Grįžti į paskutinę vietą",
+                    "error": "Neturite išsaugotos vietos grįžimui!"
+                },
+                "copy": {
+                    "title": "Kopijuoti koordinates",
+                    "label": "Nukopijuoti koordinates įklijavimui."
+                }
+            },
+            "vehicle": {
+                "title": "Tr. priemonė",
+                "onesync_error": "Šiam pasirinkimui reikalingas įjungtas OneSync, kuris reikalingas objektų valdymui",
+                "not_in_veh_error": "Nesate jokioje tr.priemonėje!",
+                "spawn": {
+                    "title": "Spawn",
+                    "label": "Spawn'inti tr. priemonę pagal pavadinimą",
+                    "dialog_title": "Spawn'inti tr. priemonę",
+                    "dialog_desc": "Įveskite tr. priemonės modelio pavadinimą.",
+                    "dialog_success": "Tr. priemonė sukurta!",
+                    "dialog_error": "Modelio pavadinimas '%{modelName}' neegzistuoja!",
+                    "dialog_info": "Bandoma at'spawn'inti %{modelName}."
+                },
+                "fix": {
+                    "title": "Remontas",
+                    "label": "Suremontuoti tr. priemonę",
+                    "success": "Tr. priemonė suremontuota!"
+                },
+                "delete": {
+                    "title": "Ištrinti",
+                    "label": "Ištrinti dabartinę tr. priemonę",
+                    "success": "Tr. priemonė ištrinta!"
+                },
+                "boost": {
+                    "title": "Boost",
+                    "label": "Boost the car to achieve max fun (and maybe speed)",
+                    "success": "Vehicle boosted!",
+                    "already_boosted": "This vehicle was already boosted.",
+                    "unsupported_class": "This vehicle class is not supported."
+                }
+            },
+            "heal": {
+                "title": "Gydyti",
+                "myself": {
+                    "title": "Save",
+                    "label": "Atstato gyvybes jums",
+                    "success_0": "Jūs pagydytas!",
+                    "success_1": "Turėtumėte jaustis kur kas geriau!",
+                    "success_2": "Stebuklingų galių pagalba vėl jaučiatės geriau!",
+                    "success_3": "Skausmai panaikinti!"
+                },
+                "everyone": {
+                    "title": "Visus",
+                    "label": "Pagydys ir prikels visus žaidėjus",
+                    "success": "Visi žaidėjai pagydyti ir prikelti."
+                }
+            },
+            "announcement": {
+                "title": "Siųsti pranešimą",
+                "label": "Siųsti pranešimą visiems serverio žaidėjams.",
+                "dialog_desc": "Enter the message you want to broadcast to all players.",
+                "dialog_placeholder": "Jūsų pranešimas...",
+                "dialog_success": "Siunčiamas pranešimas."
+            },
+            "clear_area": {
+                "title": "Atstatyti pasaulio aplinką",
+                "label": "Reset a specified world area to its default state",
+                "dialog_desc": "Įveskite kokiu spinduliu norėtumėte atstatyti objektus (0-300). Šis pasirinkimas neištrins serverio sukurtų objektų",
+                "dialog_success": "Ištrinami objektai %{radius} metrų spinduliu",
+                "dialog_error": "Netinkamas skaičius."
+            },
+            "player_ids": {
+                "title": "Žaidėjų ID rodymas",
+                "label": "Toggle showing player IDs (and other info) above the head of all nearby players",
+                "alert_show": "Žaidėjų NetID rodomi.",
+                "alert_hide": "Žaidėjų NetID paslėpti."
+            }
+        },
+        "page_players": {
+            "misc": {
+                "online_players": "Prisijungę žaidėjai",
+                "players": "Žaidėjai",
+                "search": "Paieška",
+                "zero_players": "Žaidėjų nerasta"
+            },
+            "sort": {
+                "label": "Rykiuoti pagal",
+                "distance": "Atstumą",
+                "id": "ID",
+                "joined_first": "Pirmi prisijungę",
+                "joined_last": "Paskutiniai prisijungę",
+                "closest": "Artimiausi",
+                "farthest": "Tolimiausi"
+            },
+            "card": {
+                "health": "%{percentHealth}% gyvybių"
+            }
+        },
+        "player_modal": {
+            "misc": {
+                "error": "Klaida gaunant žaidėjo duomenis. Klaida:",
+                "target_not_found": "Nepavyko rasti žaidėjo su šiuo ID arba vardu - %{target}"
+            },
+            "tabs": {
+                "actions": "Veiksmai",
+                "info": "Informacija",
+                "ids": "ID",
+                "history": "Istorija",
+                "ban": "Blokuoti"
+            },
+            "actions": {
+                "title": "Žaidėjo veiksmai",
+                "command_sent": "Komanda išsiųsta!",
+                "moderation": {
+                    "title": "Moderavimas",
+                    "options": {
+                        "dm": "DM",
+                        "warn": "Įspėjimas",
+                        "kick": "Išmesti",
+                        "set_admin": "Paskirti administratoriumi"
+                    },
+                    "dm_dialog": {
+                        "title": "Privati žinutė (DM)",
+                        "description": "Privačios žinutės tekstas.",
+                        "placeholder": "Žinutė...",
+                        "success": "Privati žinutė išsiųsta!"
+                    },
+                    "warn_dialog": {
+                        "title": "Įspėti",
+                        "description": "Dėl kokios priežasties įspėjate žaidėją?",
+                        "placeholder": "Priežastis...",
+                        "success": "Žaidėjas įspėtas!"
+                    },
+                    "kick_dialog": {
+                        "title": "Išmesti",
+                        "description": "Dėl kokios priežasties išmetate žaidėją?",
+                        "placeholder": "Priežastis...",
+                        "success": "Žaidėjas išmestas!"
+                    }
+                },
+                "interaction": {
+                    "title": "Veiksmai",
+                    "options": {
+                        "heal": "Pagydyti",
+                        "go_to": "Nusikelti iki",
+                        "bring": "Atkelti iki savęs",
+                        "spectate": "Stebėti (spectate)",
+                        "toggle_freeze": "Šaldyti"
+                    },
+                    "notifications": {
+                        "heal_player": "Gydomas žaidėjas",
+                        "tp_player": "Nusikeliama iki žaidėjo",
+                        "bring_player": "Žaidėjas atkeliamas",
+                        "spectate_failed": "Žaidėjas nerastas! Stebėjimas išjungiamas.",
+                        "spectate_yourself": "Negalite stebėti savęs.",
+                        "freeze_yourself": "Negalite užšaldyti savęs."
+                    }
+                },
+                "troll": {
+                    "title": "Troll",
+                    "options": {
+                        "drunk": "Padaryti girtu",
+                        "fire": "Padegti",
+                        "wild_attack": "Laukinių gyvūnų užpuolimas"
+                    }
+                }
+            },
+            "info": {
+                "title": "Žaidėjo informacija",
+                "session_time": "Sesijos laikas",
+                "play_time": "Pražaista laiko",
+                "joined": "Prisijungęs",
+                "whitelisted_label": "Whitelisted",
+                "whitelisted_notyet": "not yet",
+                "btn_wl_add": "ADD WL",
+                "btn_wl_remove": "REMOVE WL",
+                "btn_wl_success": "Whitelist status changed.",
+                "log_label": "Log",
+                "log_empty": "No bans/warns found.",
+                "log_ban_count": "%{smart_count} ban |||| %{smart_count} bans",
+                "log_warn_count": "%{smart_count} warn |||| %{smart_count} warns",
+                "log_btn": "DETAILS",
+                "notes_changed": "Player note changed.",
+                "notes_placeholder": "Notes about this player..."
+            },
+            "history": {
+                "title": "Susijusi informacija",
+                "btn_revoke": "REVOKE",
+                "revoked_success": "Action revoked!",
+                "banned_by": "BANNED by %{author}",
+                "warned_by": "WARNED by %{author}",
+                "revoked_by": "Revoked by %{author}.",
+                "expired_at": "Expired at %{date}.",
+                "expires_at": "Expires at %{date}."
+            },
+            "ban": {
+                "title": "Užblokuoti žaidėją",
+                "reason_placeholder": "Priežastis",
+                "duration_placeholder": "Laikas",
+                "hours": "valandos",
+                "days": "dienos",
+                "weeks": "savaitės",
+                "months": "mėnesiai",
+                "permanent": "Visam laikui",
+                "custom": "Custom",
+                "helper_text": "Pasirinkti laiką",
+                "submit": "Apply ban",
+                "reason_required": "The Reason field is required.",
+                "success": "Player banned!"
+            },
+            "ids": {
+                "current_ids": "Current Identifiers",
+                "previous_ids": "Previously Used Identifiers"
+            }
+        }
+    }
+}

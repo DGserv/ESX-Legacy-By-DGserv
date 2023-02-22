@@ -1,0 +1,350 @@
+{
+    "$meta": {
+        "label": "Danish",
+        "humanizer_language": "da"
+    },
+    "restarter": {
+        "start_timeout": "failed to start in time",
+        "crash_detected": "crash opdaget",
+        "hang_detected": "hang opdaget",
+        "partial_hang_warn": "På grund af et delvist hang vil denne server genstarte om 1 minut. Afbryd venligst forbindelsen nu.",
+        "partial_hang_warn_discord": "På grund af et delvist hang vil **%{servername}** genstarte om 1 minut.",
+        "schedule_reason": "planlagt genstart %{time}",
+        "schedule_warn": "Serveren genstarter om %{smart_count} minut. Vær venlig at disconnecte nu. |||| Serveren genstarter om %{smart_count} minutter.",
+        "schedule_warn_discord": "**%{servername}** genstarter om %{smart_count} minut. |||| **%{servername}** genstarter om %{smart_count} minutter."
+    },
+    "ban_messages": {
+        "kick_temporary": "(%{author}) Du er blevet bannet fra denne server grundet \"%{reason}\". Dit ban udløber om: %{expiration}.",
+        "kick_permanent": "(%{author}) Du er blevet permanent udelukket fra denne server for \"%{reason}\".",
+        "reject": {
+            "title_permanent": "You have been permanently banned from this server.",
+            "title_temporary": "You have been temporarily banned from this server.",
+            "label_expiration": "Your ban will expire in",
+            "label_date": "Ban Date",
+            "label_author": "Banned by",
+            "label_reason": "Ban Reason",
+            "label_id": "Ban ID",
+            "note_multiple_bans": "Note: you have more than one active ban on your identifiers."
+        }
+    },
+    "whitelist_messages": {
+        "admin_only": {
+            "mode_title": "This server is in <strong>Admin-only</strong> mode.",
+            "insufficient_ids": "You do not have <code>discord</code> or <code>fivem</code> identifiers, and at least one of them is required to validate if you are a txAdmin administrator.",
+            "deny_message": "Your identifiers are not assigned to any txAdmin administrator."
+        },
+        "guild_member": {
+            "mode_title": "This server is in <strong>Discord Guild Member Whitelist</strong> mode.",
+            "insufficient_ids": "You do not have the <code>discord</code> identifier, which is required to validate if you have joined our Discord Guild. Please open Discord and try again.",
+            "deny_title": "You are required to join our Discord Guild to connect.",
+            "deny_message": "Please join the guild %{guildname} then try again."
+        },
+        "guild_roles": {
+            "mode_title": "This server is in <strong>Discord Role Whitelist</strong> mode.",
+            "insufficient_ids": "You do not have the <code>discord</code> identifier, which is required to validate if you have joined our Discord Guild. Please open Discord and try again.",
+            "deny_notmember_title": "You are required to join our Discord Guild to connect.",
+            "deny_notmember_message": "Please join %{guildname}, get one of the required roles, then try again.",
+            "deny_noroles_title": "You do not have a whitelisted role required to join.",
+            "deny_noroles_message": "To join this server you are required to have at least one of the whitelisted roles on the guild %{guildname}."
+        },
+        "approved_license": {
+            "mode_title": "This server is in <strong>License Whitelist</strong> mode.",
+            "insufficient_ids": "You do not have the <code>license</code> identifier, which means the server has <code>sv_lan</code> enabled. If you are the server owner, you can disable it in the <code>server.cfg</code> file.",
+            "deny_title": "You are not whitelisted to join this server.",
+            "request_id_label": "Request ID"
+        }
+    },
+    "server_actions": {
+        "restarting": "Server genstarter: (%{reason}).",
+        "restarting_discord": "**%{servername}** genstarter: (%{reason}).",
+        "stopping": "Serveren er stoppet (%{reason}).",
+        "stopping_discord": "**%{servername}** er lukket ned: (%{reason}).",
+        "spawning_discord": "**%{servername}** starter."
+    },
+    "nui_warning": {
+        "title": "ADVARSEL",
+        "warned_by": "Advaret af:",
+        "instruction": "Hold [MELLEMRUM] nede i 10 sekunder for at afvise denne meddelelse."
+    },
+    "nui_menu": {
+        "misc": {
+            "help_message": "txAdmin Menu aktiveret, skriv /tx for at åbne den.\nDu kan også konfigurere egne keybinds under [Spilindstillinger > Nøglebindinger > FiveM > Menu: Åbn hovedside].",
+            "menu_not_allowed": "Dine identifikatorer matcher ikke nogen admin registreret på txAdmin.\nHvis du er registreret på txAdmin, skal du gå til Admin Manager og sørge for, at dine identifikatorer er gemt.",
+            "no_perms": "Du har ikke denne tilladelse.",
+            "unknown_error": "Der opstod en ukendt fejl.",
+            "not_enabled": "txAdmin-menuen er ikke aktiveret! Du kan aktivere det på siden med txAdmin-indstillinger.",
+            "announcement_title": "Servermeddelelse af %{author}:",
+            "dialog_empty_input": "Du kan ikke have et tomt input.",
+            "directmessage_title": "DM from admin %{author}:"
+        },
+        "frozen": {
+            "froze_player": "Du har frosset spilleren!",
+            "unfroze_player": "Du har frigjort spilleren!",
+            "was_frozen": "Du er blevet frosset af en serveradministrator!"
+        },
+        "common": {
+            "cancel": "Anuller",
+            "submit": "Indsend",
+            "error": "Der opstod en fejl",
+            "copied": "Kopieret til udklipsholder."
+        },
+        "page_main": {
+            "tooltips": {
+                "tooltip_1": "Brug %{key} for at skifte side og piletasterne for at navigere i menupunkter",
+                "tooltip_2": "Visse menupunkter har undervalg, som kan vælges ved hjælp af venstre og højre piletasterne"
+            },
+            "player_mode": {
+                "title": "Player Mode",
+                "noclip": {
+                    "title": "NoClip",
+                    "label": "Flyv rundt",
+                    "success": "NoClip aktiveretr"
+                },
+                "godmode": {
+                    "title": "God",
+                    "label": "Invincible",
+                    "success": "God Mode aktiveretr"
+                },
+                "superjump": {
+                    "title": "Super Jump",
+                    "label": "Toggle super jump mode, the player will also run faster",
+                    "success": "Super Jump enabled"
+                },
+                "normal": {
+                    "title": "Normal",
+                    "label": "Default mode",
+                    "success": "Returned to default player mode."
+                }
+            },
+            "teleport": {
+                "title": "Teleport",
+                "generic_success": "Sent you into the wormhole!",
+                "waypoint": {
+                    "title": "Waypoint",
+                    "label": "Gå til waypoint sat",
+                    "error": "Du har intet waypoint sat."
+                },
+                "coords": {
+                    "title": "Coords",
+                    "label": "Gå til angivne koordinater",
+                    "dialog_title": "Teleporter",
+                    "dialog_desc": "Angiv koordinater i et x-, y-, z-format for at gå gennem ormehullet.",
+                    "dialog_error": "Ugyldige koordinater. Skal være i formatet: 111, 222, 33"
+                },
+                "back": {
+                    "title": "Tilbage",
+                    "label": "Gå tilbage til sidste placering",
+                    "error": "Du har ikke et sidste sted at gå tilbage til!"
+                },
+                "copy": {
+                    "title": "Kopier koordinater",
+                    "label": "Kopiér koordinater til udklipsholder."
+                }
+            },
+            "vehicle": {
+                "title": "Køretøj",
+                "onesync_error": "Denne mulighed kræver, at OneSync er slået til for håndtering af serverenheder",
+                "not_in_veh_error": "Du er ikke i et køretøj i øjeblikket!",
+                "spawn": {
+                    "title": "Spawn",
+                    "label": "Spawn køretøj efter modelnavn",
+                    "dialog_title": "Spawn køretøj",
+                    "dialog_desc": "Indtast modelnavnet på det køretøj, du ønsker at spawne.",
+                    "dialog_success": "Køretøjet spawnede!",
+                    "dialog_error": "Køretøjets modelnavn '%{modelName}' findes ikke!",
+                    "dialog_info": "Forsøger at spawne %{modelName}."
+                },
+                "fix": {
+                    "title": "Fiks",
+                    "label": "Ret det aktuelle køretøj",
+                    "success": "Køretøj fikset!"
+                },
+                "delete": {
+                    "title": "Slet",
+                    "label": "Slet det aktuelle køretøj",
+                    "success": "Køretøj slettet!"
+                },
+                "boost": {
+                    "title": "Boost",
+                    "label": "Boost the car to achieve max fun (and maybe speed)",
+                    "success": "Vehicle boosted!",
+                    "already_boosted": "This vehicle was already boosted.",
+                    "unsupported_class": "This vehicle class is not supported."
+                }
+            },
+            "heal": {
+                "title": "Helbred",
+                "myself": {
+                    "title": "Mig selv",
+                    "label": "Genskaber dit helbred",
+                    "success_0": "Alle er raske!",
+                    "success_1": "Du burde have det godt nu!",
+                    "success_2": "Gendannet til fuld!",
+                    "success_3": "Ouchies rettet!"
+                },
+                "everyone": {
+                    "title": "Alle",
+                    "label": "Vil helbrede og genoplive alle spillere",
+                    "success": "Hellede og genoplivede alle spillere."
+                }
+            },
+            "announcement": {
+                "title": "Send meddelelse",
+                "label": "Send en meddelelse til alle onlinespillere.",
+                "dialog_desc": "Send en meddelelse til alle online spillere.",
+                "dialog_placeholder": "Din meddelelse...",
+                "dialog_success": "Sender meddelelsen."
+            },
+            "clear_area": {
+                "title": "Nulstil verdensområde",
+                "label": "Nulstil et angivet verdensområde til dets standardtilstand",
+                "dialog_desc": "Indtast venligst den radius, hvor du ønsker at nulstille entiteter i (0-300). Dette vil ikke rydde entiteter affødt serverside.",
+                "dialog_success": "Rydning af område med en radius på %{radius}m",
+                "dialog_error": "Ugyldig radiusinput. Prøv igen."
+            },
+            "player_ids": {
+                "title": "Vælg spiller-id'er",
+                "label": "Skift visning af spiller-id'er (og anden info) over hovedet på alle nærliggende spillere",
+                "alert_show": "Viser nærliggende spillerens NetID'er.",
+                "alert_hide": "Skjuler afspillerens NetID'er i nærheden."
+            }
+        },
+        "page_players": {
+            "misc": {
+                "online_players": "Online spillere",
+                "players": "Spillere",
+                "search": "Søg",
+                "zero_players": "Ingen spillere fundet"
+            },
+            "sort": {
+                "label": "Sortér efter",
+                "distance": "Afstand",
+                "id": "ID",
+                "joined_first": "Blev med først",
+                "joined_last": "Blev med sidst",
+                "closest": "Tættest",
+                "farthest": "Farthest"
+            },
+            "card": {
+                "health": "%{percentHealth}% liv"
+            }
+        },
+        "player_modal": {
+            "misc": {
+                "error": "Der opstod en fejl under hentning af denne brugers detaljer. Fejlen er vist nedenfor:",
+                "target_not_found": "Kunne ikke finde en online spiller med ID eller et brugernavn på %{target}"
+            },
+            "tabs": {
+                "actions": "Handlinger",
+                "info": "Info",
+                "ids": "ID'er",
+                "history": "Historie",
+                "ban": "Ban"
+            },
+            "actions": {
+                "title": "Spillerhandlinger",
+                "command_sent": "Kommando sendt!",
+                "moderation": {
+                    "title": "Moderation",
+                    "options": {
+                        "dm": "DM",
+                        "warn": "Advar",
+                        "kick": "Kick",
+                        "set_admin": "Giv Admin"
+                    },
+                    "dm_dialog": {
+                        "title": "Direkte besked",
+                        "description": "Hvad er årsagen til at sende direkte beskeder til denne afspiller?",
+                        "placeholder": "Årsag...",
+                        "success": "Din DM er blevet sendt!"
+                    },
+                    "warn_dialog": {
+                        "title": "Advar",
+                        "description": "Hvad er grunden til at advare denne spiller direkte?",
+                        "placeholder": "Årsag...",
+                        "success": "Spilleren blev advaret!"
+                    },
+                    "kick_dialog": {
+                        "title": "kick",
+                        "description": "Hvad er grunden til at kicke denne spiller?",
+                        "placeholder": "Årsag...",
+                        "success": "Spilleren blev kicket!"
+                    }
+                },
+                "interaction": {
+                    "title": "Interaktion",
+                    "options": {
+                        "heal": "helbred",
+                        "go_to": "Gå til",
+                        "bring": "Bring",
+                        "spectate": "Spectate",
+                        "toggle_freeze": "Frys spilleren"
+                    },
+                    "notifications": {
+                        "heal_player": "Heal spiller",
+                        "tp_player": "Teleporterer til spiller",
+                        "bring_player": "Tp spilleren til dig",
+                        "spectate_failed": "Det lykkedes ikke at spectate målet!Stopper med at spectate.",
+                        "spectate_yourself": "Du kan ikke spectate dig selv.",
+                        "freeze_yourself": "Du kan ikke fryse dig selv."
+                    }
+                },
+                "troll": {
+                    "title": "Troll",
+                    "options": {
+                        "drunk": "Gør fuld",
+                        "fire": "Sæt ild",
+                        "wild_attack": "Vildt angreb"
+                    }
+                }
+            },
+            "info": {
+                "title": "Spiller info",
+                "session_time": "Sessionstid",
+                "play_time": "Spilletid",
+                "joined": "Joined",
+                "whitelisted_label": "Whitelisted",
+                "whitelisted_notyet": "not yet",
+                "btn_wl_add": "ADD WL",
+                "btn_wl_remove": "REMOVE WL",
+                "btn_wl_success": "Whitelist status changed.",
+                "log_label": "Log",
+                "log_empty": "No bans/warns found.",
+                "log_ban_count": "%{smart_count} ban |||| %{smart_count} bans",
+                "log_warn_count": "%{smart_count} warn |||| %{smart_count} warns",
+                "log_btn": "DETAILS",
+                "notes_changed": "Player note changed.",
+                "notes_placeholder": "Notes about this player..."
+            },
+            "history": {
+                "title": "Relateret historie",
+                "btn_revoke": "REVOKE",
+                "revoked_success": "Action revoked!",
+                "banned_by": "BANNED by %{author}",
+                "warned_by": "WARNED by %{author}",
+                "revoked_by": "Revoked by %{author}.",
+                "expired_at": "Expired at %{date}.",
+                "expires_at": "Expires at %{date}."
+            },
+            "ban": {
+                "title": "Forbyd spiller",
+                "reason_placeholder": "Årsag",
+                "duration_placeholder": "Varighed",
+                "hours": "timer",
+                "days": "days",
+                "weeks": "uger",
+                "months": "måneder",
+                "permanent": "Permanent",
+                "custom": "Brugerdefineret",
+                "helper_text": "Vælg venligst en varighed",
+                "submit": "Anvend forbud",
+                "reason_required": "The Reason field is required.",
+                "success": "Player banned!"
+            },
+            "ids": {
+                "current_ids": "Current Identifiers",
+                "previous_ids": "Previously Used Identifiers"
+            }
+        }
+    }
+}

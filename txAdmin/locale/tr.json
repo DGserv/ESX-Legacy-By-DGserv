@@ -1,0 +1,350 @@
+{
+    "$meta": {
+        "label": "Turkish",
+        "humanizer_language": "tr"
+    },
+    "restarter": {
+        "start_timeout": "zamanında başlatılamadı",
+        "crash_detected": "Çökme tespit edildi",
+        "hang_detected": "Takılma algılandı",
+        "partial_hang_warn": "Takılma nedeniyle bu sunucu 1 dakika içinde yeniden başlayacak. Lütfen şimdi bağlantıyı kesin.",
+        "partial_hang_warn_discord": "Takılma nedeniyle **%{servername}** 1 dakika içinde yeniden başlayacak.",
+        "schedule_reason": "Zamanlanmış yeniden başlatma %{time}",
+        "schedule_warn": "Sunucu %{smart_count} dakika içerisinde zamanlanmış şekilde yeniden başlatılacaktır. Lütfen çıkış yapın. |||| Sunucu %{smart_count} dakika içerisinde zamanlanmış şekilde yeniden başlatılacaktır.",
+        "schedule_warn_discord": "**%{servername}** sunucusu %{smart_count} dakika içerisinde yeniden başlatılmaya zamanlandı. |||| **%{servername}** sunucusu %{smart_count} dakika içerisinde yeniden başlatılmaya zamanlandı."
+    },
+    "ban_messages": {
+        "kick_temporary": "(%{author}) \"%{reason}\" sebebi ile bu sunucudan uzaklaştırıldın! Cezanın bitmesine kalan süre: %{expiration}.",
+        "kick_permanent": "(%{author}) \"%{reason}\". sebebi ile bu sunucudan süresiz olarak uzaklaştırıldın!",
+        "reject": {
+            "title_permanent": "Bu sunucudan kalıcı olarak yasaklandınız.",
+            "title_temporary": "Bu sunucudan geçici olarak yasaklandınız.",
+            "label_expiration": "Yasak süreniz şu tarihte sona erecek:",
+            "label_date": "Yasaklanma Tarihi",
+            "label_author": "Yasaklayan",
+            "label_reason": "Yasaklanma Sebebi",
+            "label_id": "Ban ID",
+            "note_multiple_bans": "Not: Tanımlayıcılarınız üzerinde birden fazla aktif yasağınız var."
+        }
+    },
+    "whitelist_messages": {
+        "admin_only": {
+            "mode_title": "This server is in <strong>Admin-only</strong> mode.",
+            "insufficient_ids": "You do not have <code>discord</code> or <code>fivem</code> identifiers, and at least one of them is required to validate if you are a txAdmin administrator.",
+            "deny_message": "Your identifiers are not assigned to any txAdmin administrator."
+        },
+        "guild_member": {
+            "mode_title": "This server is in <strong>Discord Guild Member Whitelist</strong> mode.",
+            "insufficient_ids": "You do not have the <code>discord</code> identifier, which is required to validate if you have joined our Discord Guild. Please open Discord and try again.",
+            "deny_title": "You are required to join our Discord Guild to connect.",
+            "deny_message": "Please join the guild %{guildname} then try again."
+        },
+        "guild_roles": {
+            "mode_title": "This server is in <strong>Discord Role Whitelist</strong> mode.",
+            "insufficient_ids": "You do not have the <code>discord</code> identifier, which is required to validate if you have joined our Discord Guild. Please open Discord and try again.",
+            "deny_notmember_title": "You are required to join our Discord Guild to connect.",
+            "deny_notmember_message": "Please join %{guildname}, get one of the required roles, then try again.",
+            "deny_noroles_title": "You do not have a whitelisted role required to join.",
+            "deny_noroles_message": "To join this server you are required to have at least one of the whitelisted roles on the guild %{guildname}."
+        },
+        "approved_license": {
+            "mode_title": "This server is in <strong>License Whitelist</strong> mode.",
+            "insufficient_ids": "You do not have the <code>license</code> identifier, which means the server has <code>sv_lan</code> enabled. If you are the server owner, you can disable it in the <code>server.cfg</code> file.",
+            "deny_title": "You are not whitelisted to join this server.",
+            "request_id_label": "Request ID"
+        }
+    },
+    "server_actions": {
+        "restarting": "Sunucu yeniden başlatılıyor.(%{reason}).",
+        "restarting_discord": "**%{servername}** sunucusu yeniden başlatılıyor. (%{reason}).",
+        "stopping": "Sunucu kapatılıyor(%{reason}).",
+        "stopping_discord": "**%{servername}** sunucu kapatılıyor (%{reason}).",
+        "spawning_discord": "**%{servername}** sunucu başlatıldı."
+    },
+    "nui_warning": {
+        "title": "UYARI",
+        "warned_by": "Uyarıldın:",
+        "instruction": "Bu mesajı geçmek için [SPACE] tuşuna 10 saniye boyunca basılı tut."
+    },
+    "nui_menu": {
+        "misc": {
+            "help_message": "txAdmin Menüsü etkinleştirildi, açmak için /tx yazın.\nAyrıca [Oyun Ayarları > Tuş Bağlantıları > FiveM > Menü: Ana Sayfayı Aç] öğesinde bir tuş ataması yapılandırabilirsiniz.",
+            "menu_not_allowed": "Tanımlayıcılarınız, txAdmin'de kayıtlı herhangi bir yöneticiyle eşleşmiyor.\ntxAdmin'de kayıtlıysanız, Admin Manager'e gidin ve tanımlayıcılarınızın kaydedildiğinden emin olun.",
+            "no_perms": "Bu izne sahip değilsiniz.",
+            "unknown_error": "Bilinmeyen bir hata oluştu.",
+            "not_enabled": "txAdmin Menüsü etkin değil! Bunu txAdmin ayarları sayfasından etkinleştirebilirsiniz.",
+            "announcement_title": "%{author} tarafından Sunucu Duyurusu:",
+            "dialog_empty_input": "Boş bir girdiniz olamaz.",
+            "directmessage_title": "%{author} yöneticisinden DM:"
+        },
+        "frozen": {
+            "froze_player": "Oyuncuyu dondurdunuz!",
+            "unfroze_player": "Oyuncuyu çözdünüz!",
+            "was_frozen": "Bir sunucu yöneticisi tarafından donduruldunuz!"
+        },
+        "common": {
+            "cancel": "İptal",
+            "submit": "Gönder",
+            "error": "Bir hata oluştu",
+            "copied": "Panoya kopyalandı."
+        },
+        "page_main": {
+            "tooltips": {
+                "tooltip_1": "Sayfalar arasında geçiş yapmak için %{key} & menü öğelerinde gezinmek için ok tuşlarını kullanın",
+                "tooltip_2": "Belirli menü öğeleri, sol ve sağ ok tuşları kullanılarak seçilebilen alt seçeneklere sahiptir."
+            },
+            "player_mode": {
+                "title": "Oyuncu Modu",
+                "noclip": {
+                    "title": "NoClip",
+                    "label": "Etrafta uç",
+                    "success": "NoClip etkinleştirilmiş"
+                },
+                "godmode": {
+                    "title": "Tanrı modu",
+                    "label": "Ölümsüzlük",
+                    "success": "Tanrı modu etkinleştirilmiş"
+                },
+                "superjump": {
+                    "title": "Super Jump",
+                    "label": "Toggle super jump mode, the player will also run faster",
+                    "success": "Super Jump enabled"
+                },
+                "normal": {
+                    "title": "Normal",
+                    "label": "Varsayılan mod",
+                    "success": "Varsayılan oyuncu moduna döndü."
+                }
+            },
+            "teleport": {
+                "title": "Işınlanma",
+                "generic_success": "Seni solucan deliğine gönderdi!",
+                "waypoint": {
+                    "title": "Waypoint",
+                    "label": "İşaretlediğin yere git",
+                    "error": "Herhangi bir yer işaretlemedin."
+                },
+                "coords": {
+                    "title": "Koordinat",
+                    "label": "Belirtilen koordinatlara git",
+                    "dialog_title": "Işınlanma",
+                    "dialog_desc": "Solucan deliğinden geçmek için koordinatları x, y, z formatında sağlayın.",
+                    "dialog_error": "Geçersiz koordinatlar. Şu biçimde olmalıdır: 111, 222, 33"
+                },
+                "back": {
+                    "title": "Geri",
+                    "label": "Son konuma geri dön",
+                    "error": "Geri dönecek son konumun yok!"
+                },
+                "copy": {
+                    "title": "Koordinatları Kopyala",
+                    "label": "Koordinatları panoya kopyalayın."
+                }
+            },
+            "vehicle": {
+                "title": "Araç",
+                "onesync_error": "Bu seçenek, sunucu varlığı işleme için OneSync'in açık olmasını gerektirir",
+                "not_in_veh_error": "Şu anda bir araçta değilsiniz!",
+                "spawn": {
+                    "title": "Spawn",
+                    "label": "Model adına göre araç spawnlama",
+                    "dialog_title": "Aracı spawnla",
+                    "dialog_desc": "Spawnlamak istediğiniz aracın model adını girin.",
+                    "dialog_success": "Araç spawnlandı!",
+                    "dialog_error": "'%{modelName}' araç modeli mevcut değil!",
+                    "dialog_info": "%{modelName} spawnlanıyor."
+                },
+                "fix": {
+                    "title": "Tamir",
+                    "label": "Mevcut aracı tamir et",
+                    "success": "Araç tamir edildi!"
+                },
+                "delete": {
+                    "title": "Sil",
+                    "label": "Mevcut aracı sil",
+                    "success": "Araç silindi!"
+                },
+                "boost": {
+                    "title": "Güçlendir",
+                    "label": "Maksimum eğlenceye (ve belki de hıza) ulaşmak için arabayı güçlendirin",
+                    "success": "Araç güçlendirildi!",
+                    "already_boosted": "This vehicle was already boosted.",
+                    "unsupported_class": "This vehicle class is not supported."
+                }
+            },
+            "heal": {
+                "title": "Sağlık",
+                "myself": {
+                    "title": "Kendim",
+                    "label": "Sağlığınızı geri yükler",
+                    "success_0": "Hepsi iyileşti!",
+                    "success_1": "Şimdi iyi hissediyor olmalısın!",
+                    "success_2": "Tamamen restore edildi!",
+                    "success_3": "Hatalar düzeltildi!"
+                },
+                "everyone": {
+                    "title": "Herkes",
+                    "label": "Tüm oyuncuları iyileştirecek ve canlandıracak",
+                    "success": "Tüm oyuncuları iyileştirdi ve canlandırdı."
+                }
+            },
+            "announcement": {
+                "title": "Duyuru Gönder",
+                "label": "Tüm çevrimiçi oyunculara bir duyuru gönderin.",
+                "dialog_desc": "Tüm çevrimiçi oyunculara bir duyuru gönderin.",
+                "dialog_placeholder": "Duyurunuz...",
+                "dialog_success": "Duyuru gönderildi."
+            },
+            "clear_area": {
+                "title": "Dünya Alanını Sıfırla",
+                "label": "Belirtilen bir dünya alanını varsayılan durumuna sıfırlayın",
+                "dialog_desc": "Lütfen (0-300) içindeki varlıkları sıfırlamak istediğiniz yarıçapı girin. Bu, sunucu tarafında oluşturulan varlıkları temizlemez.",
+                "dialog_success": "%{radius}m yarıçaplı alanı temizleme",
+                "dialog_error": "Geçersiz yarıçap girişi. Tekrar deneyin."
+            },
+            "player_ids": {
+                "title": "Oyuncu Kimliklerini Aç/Kapat",
+                "label": "Yakındaki tüm oyuncuların başının üstünde oyuncu kimliklerini (ve diğer bilgileri) göstermeyi aç/kapat",
+                "alert_show": "Yakındaki oyuncu NetID'leri gösteriliyor.",
+                "alert_hide": "Yakındaki oyuncu NetID'lerini gizleme."
+            }
+        },
+        "page_players": {
+            "misc": {
+                "online_players": "Çevrimiçi Oyuncular",
+                "players": "Oyuncular",
+                "search": "Arama",
+                "zero_players": "Oyuncu bulunamadı"
+            },
+            "sort": {
+                "label": "Sırala",
+                "distance": "Mesafe",
+                "id": "ID",
+                "joined_first": "İlk katıldı",
+                "joined_last": "Son katıldı",
+                "closest": "En yakın",
+                "farthest": "En uzak"
+            },
+            "card": {
+                "health": "%{percentHealth}% sağlık"
+            }
+        },
+        "player_modal": {
+            "misc": {
+                "error": "Bu kullanıcıların ayrıntıları alınırken bir hata oluştu. Hata aşağıda gösterilmiştir:",
+                "target_not_found": "Kimliği veya kullanıcı adı %{target} olan bir çevrimiçi oyuncu bulunamadı"
+            },
+            "tabs": {
+                "actions": "Hareketler",
+                "info": "Bilgi",
+                "ids": "ID'ler",
+                "history": "Geçmiş",
+                "ban": "Yasakla"
+            },
+            "actions": {
+                "title": "Oyuncu Eylemleri",
+                "command_sent": "Komut gönderildi!",
+                "moderation": {
+                    "title": "Moderasyon",
+                    "options": {
+                        "dm": "Direkt Mesaj",
+                        "warn": "Uyarı",
+                        "kick": "At",
+                        "set_admin": "Adminlik Ver"
+                    },
+                    "dm_dialog": {
+                        "title": "Direkt mesaj",
+                        "description": "Bu oyuncuya doğrudan mesaj göndermenin nedeni nedir?",
+                        "placeholder": "Sebep...",
+                        "success": "DM'niz gönderildi!"
+                    },
+                    "warn_dialog": {
+                        "title": "Uyarı",
+                        "description": "Bu oyuncuyu doğrudan uyarmanın sebebi nedir?",
+                        "placeholder": "Sebep...",
+                        "success": "Oyuncu uyarıldı!"
+                    },
+                    "kick_dialog": {
+                        "title": "Kick",
+                        "description": "Bu oyuncuyu atmanın sebebi nedir?",
+                        "placeholder": "Sebep...",
+                        "success": "Oyuncu atıldı!"
+                    }
+                },
+                "interaction": {
+                    "title": "Etkileşim",
+                    "options": {
+                        "heal": "İyileştirmek",
+                        "go_to": "Yanına Git",
+                        "bring": "Yanına Çek",
+                        "spectate": "İzle",
+                        "toggle_freeze": "Dondurmayı Aç/Kapat"
+                    },
+                    "notifications": {
+                        "heal_player": "Oyuncu iyileştirildi",
+                        "tp_player": "Oyuncuya ışınlanıldı",
+                        "bring_player": "Oyuncu yanınıza ışınlandı",
+                        "spectate_failed": "Hedef çözülemedi! İzlemeden çıkıldı.",
+                        "spectate_yourself": "Kendini izleyemezsiniz.",
+                        "freeze_yourself": "Kendini donduramazsın."
+                    }
+                },
+                "troll": {
+                    "title": "Troll",
+                    "options": {
+                        "drunk": "Sarhoş Yap",
+                        "fire": "Ateşe Ver",
+                        "wild_attack": "Hayvan Saldırısı"
+                    }
+                }
+            },
+            "info": {
+                "title": "Oyuncu bilgisi",
+                "session_time": "Oturum süresi",
+                "play_time": "Oynama süresi",
+                "joined": "Katıldı",
+                "whitelisted_label": "Whitelist'e alındı",
+                "whitelisted_notyet": "henüz değil",
+                "btn_wl_add": "WL ekle",
+                "btn_wl_remove": "WL al",
+                "btn_wl_success": "Whitelist durumu değişti.",
+                "log_label": "Kayıt",
+                "log_empty": "Yasaklama/uyarı bulunamadı.",
+                "log_ban_count": "%{smart_count} yasak |||| %{smart_count} yasak",
+                "log_warn_count": "%{smart_count} uyarı |||| %{smart_count} uyarı",
+                "log_btn": "DETAYLAR",
+                "notes_changed": "Oyuncu notu değişti.",
+                "notes_placeholder": "Bu oyuncu hakkında notlar..."
+            },
+            "history": {
+                "title": "İlgili geçmiş",
+                "btn_revoke": "İPTAL ET",
+                "revoked_success": "İşlem iptal edildi!",
+                "banned_by": "%{author} tarafından yasaklandı",
+                "warned_by": "%{author} tarafından uyarıldı",
+                "revoked_by": "%{author} tarafından iptal edildi.",
+                "expired_at": "%{date} tarihinde süresi doldu.",
+                "expires_at": "%{date} tarihinde sona eriyor."
+            },
+            "ban": {
+                "title": "Oyuncuyu yasakla",
+                "reason_placeholder": "Sebep",
+                "duration_placeholder": "Süre",
+                "hours": "saat",
+                "days": "gün",
+                "weeks": "hafta",
+                "months": "ay",
+                "permanent": "Kalıcı",
+                "custom": "Özel",
+                "helper_text": "Lütfen bir süre seçin",
+                "submit": "Yasağı uygula",
+                "reason_required": "Neden alanı gereklidir.",
+                "success": "Oyuncu yasaklandı!"
+            },
+            "ids": {
+                "current_ids": "Geçerli Tanımlayıcılar",
+                "previous_ids": "Daha Önce Kullanılan Tanımlayıcılar"
+            }
+        }
+    }
+}

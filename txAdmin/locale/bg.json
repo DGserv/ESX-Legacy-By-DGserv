@@ -1,0 +1,350 @@
+{
+    "$meta": {
+        "label": "Bulgarian",
+        "humanizer_language": "bg"
+    },
+    "restarter": {
+        "start_timeout": "Не стартира на време",
+        "crash_detected": "Възникнал проблем",
+        "hang_detected": "Засичане",
+        "partial_hang_warn": "Поради частично засичане, сървърът ще се рестартира след 1 минута. Моля излезте сега.",
+        "partial_hang_warn_discord": "Поради частично засичане, **%{servername}** ще се рестартира след 1 минута.",
+        "schedule_reason": "Планирано рестартиране в %{time}",
+        "schedule_warn": "Сървърът е планиран да се рестартира след %{smart_count} минути. Моля излезте сега. |||| Сървърът е планиран да се рестартира след %{smart_count} минути.",
+        "schedule_warn_discord": "**%{servername}** ще се рестартира след %{smart_count} минути. |||| **%{servername}** ще се рестартира след %{smart_count} минути."
+    },
+    "ban_messages": {
+        "kick_temporary": "(%{author}) Ти беше забранен: \"%{reason}\". Твоята забрана ще изтече на: %{expiration}.",
+        "kick_permanent": "(%{author}) Ти беше перманентно забранен от този сървър с причина: \"%{reason}\".",
+        "reject": {
+            "title_permanent": "You have been permanently banned from this server.",
+            "title_temporary": "You have been temporarily banned from this server.",
+            "label_expiration": "Your ban will expire in",
+            "label_date": "Ban Date",
+            "label_author": "Banned by",
+            "label_reason": "Ban Reason",
+            "label_id": "Ban ID",
+            "note_multiple_bans": "Note: you have more than one active ban on your identifiers."
+        }
+    },
+    "whitelist_messages": {
+        "admin_only": {
+            "mode_title": "This server is in <strong>Admin-only</strong> mode.",
+            "insufficient_ids": "You do not have <code>discord</code> or <code>fivem</code> identifiers, and at least one of them is required to validate if you are a txAdmin administrator.",
+            "deny_message": "Your identifiers are not assigned to any txAdmin administrator."
+        },
+        "guild_member": {
+            "mode_title": "This server is in <strong>Discord Guild Member Whitelist</strong> mode.",
+            "insufficient_ids": "You do not have the <code>discord</code> identifier, which is required to validate if you have joined our Discord Guild. Please open Discord and try again.",
+            "deny_title": "You are required to join our Discord Guild to connect.",
+            "deny_message": "Please join the guild %{guildname} then try again."
+        },
+        "guild_roles": {
+            "mode_title": "This server is in <strong>Discord Role Whitelist</strong> mode.",
+            "insufficient_ids": "You do not have the <code>discord</code> identifier, which is required to validate if you have joined our Discord Guild. Please open Discord and try again.",
+            "deny_notmember_title": "You are required to join our Discord Guild to connect.",
+            "deny_notmember_message": "Please join %{guildname}, get one of the required roles, then try again.",
+            "deny_noroles_title": "You do not have a whitelisted role required to join.",
+            "deny_noroles_message": "To join this server you are required to have at least one of the whitelisted roles on the guild %{guildname}."
+        },
+        "approved_license": {
+            "mode_title": "This server is in <strong>License Whitelist</strong> mode.",
+            "insufficient_ids": "You do not have the <code>license</code> identifier, which means the server has <code>sv_lan</code> enabled. If you are the server owner, you can disable it in the <code>server.cfg</code> file.",
+            "deny_title": "You are not whitelisted to join this server.",
+            "request_id_label": "Request ID"
+        }
+    },
+    "server_actions": {
+        "restarting": "Сървърът се рестартира, (%{reason}).",
+        "restarting_discord": "**%{servername}** се рестартира, (%{reason}).",
+        "stopping": "Сървърът е спрян, (%{reason}).",
+        "stopping_discord": "**%{servername}** сървърът се спира, (%{reason}).",
+        "spawning_discord": "**%{servername}** е пуснат. "
+    },
+    "nui_warning": {
+        "title": "ПРЕДУПРЕЖДЕНИЕ",
+        "warned_by": "Предупреден от:",
+        "instruction": "Задръж [SPACE] за 10 секунди, за да махнеш предупреждението."
+    },
+    "nui_menu": {
+        "misc": {
+            "help_message": "txAdmin менюто е включено, напиши /tx, за да го отвориш.\nМоже също да го конфигурирате с копче в [Game Settings > Key Bindings > FiveM > Menu: Open Main Page].",
+            "menu_not_allowed": "Твоите идентификатори не са съвместими с тези, които са регистрирани в txAdmin.\nАко си регистриран в txAdmin, отиди в Admin Manager и се увери, че идентификаторите са запазиени.",
+            "no_perms": "Нямаш правомощията за това.",
+            "unknown_error": "Възникна неизвестна грешка..",
+            "not_enabled": "txAdmin менюто не е включено! Може да го включиш чрез настройките на txAdmin.",
+            "announcement_title": "Сървърно съобщение от %{author}:",
+            "dialog_empty_input": "Полето е празно.",
+            "directmessage_title": "DM from admin %{author}:"
+        },
+        "frozen": {
+            "froze_player": "Ти замрази играч!",
+            "unfroze_player": "Ти отмрази играч!",
+            "was_frozen": "Ти беше замразен от сървърен администратор!"
+        },
+        "common": {
+            "cancel": "Откажи",
+            "submit": "Потвърди",
+            "error": "Грешка!",
+            "copied": "Копирано."
+        },
+        "page_main": {
+            "tooltips": {
+                "tooltip_1": "Използвай %{key} за да навигираш из страниците и из менюто.",
+                "tooltip_2": "Определени менюта имат свои опции, които могат да бъдат селектирани с лява и дясна стрелка."
+            },
+            "player_mode": {
+                "title": "Игрален Режим",
+                "noclip": {
+                    "title": "NoClip",
+                    "label": "Включи режимът NoClip, с което ще си позволиш да минаваш през стени и други обекти.",
+                    "success": "Режим NoClip е включен"
+                },
+                "godmode": {
+                    "title": "Безсмъртие",
+                    "label": "Включи ремижът на безсмъртие, предпазвайки те от умиране.",
+                    "success": "Безсмъртието е включено."
+                },
+                "superjump": {
+                    "title": "Super Jump",
+                    "label": "Toggle super jump mode, the player will also run faster",
+                    "success": "Super Jump enabled"
+                },
+                "normal": {
+                    "title": "Нормално",
+                    "label": "Връща те към нормалният игрален режим, позволявайки да умреш.",
+                    "success": "Върнат към нормален игрален режим."
+                }
+            },
+            "teleport": {
+                "title": "Телепорт",
+                "generic_success": "Успешно изпращане в червеевата дупка!",
+                "waypoint": {
+                    "title": "Tочка на карта",
+                    "label": "Телпортирай се до точка зададена на картата.",
+                    "error": "Нямаш зададена точка на картата."
+                },
+                "coords": {
+                    "title": "Координати",
+                    "label": "Телепортирай се до определени координати.",
+                    "dialog_title": "Телепорт",
+                    "dialog_desc": "Задай координати в полето за писане във вариант; x, y, z за да преминеш през червеевата дупка.",
+                    "dialog_error": "Инвалидни координати. Трябва да бъдат във вариант: 111, 222, 33"
+                },
+                "back": {
+                    "title": "Върни се",
+                    "label": "Връщаш се към последната локация, съвместима с последното телепортиране.",
+                    "error": "Нямаш последна локация, към която можеш да се телепортираш!"
+                },
+                "copy": {
+                    "title": "Копирай координати",
+                    "label": "Копирай текущите координати."
+                }
+            },
+            "vehicle": {
+                "title": "Автомобил",
+                "onesync_error": "Тази опция изисква 'OneSync' да е включен.",
+                "not_in_veh_error": "Не си в автомобил!",
+                "spawn": {
+                    "title": "Създай",
+                    "label": "Създай автомобил чрез моделното ѝ име.",
+                    "dialog_title": "Създай автомобил",
+                    "dialog_desc": "Напиши моделът на автомобила който искаш да създадеш.",
+                    "dialog_success": "Автомобила беше създаден успешно!",
+                    "dialog_error": "Автомобила с моделно име '%{modelName}' не съществува!",
+                    "dialog_info": "Опитваш се да създадеш %{modelName}."
+                },
+                "fix": {
+                    "title": "Поправи",
+                    "label": "Ще поправи автомобила в който си.",
+                    "success": "Автомобила е поправен!"
+                },
+                "delete": {
+                    "title": "Изтрий",
+                    "label": "Изтриване на автомобила в които се намираш.",
+                    "success": "Автомобила е изтрит!"
+                },
+                "boost": {
+                    "title": "Boost",
+                    "label": "Boost the car to achieve max fun (and maybe speed)",
+                    "success": "Vehicle boosted!",
+                    "already_boosted": "This vehicle was already boosted.",
+                    "unsupported_class": "This vehicle class is not supported."
+                }
+            },
+            "heal": {
+                "title": "Излекувай",
+                "myself": {
+                    "title": "Себе си",
+                    "label": "Ще напълни кръвта на моделът 'пед' с който играеш.",
+                    "success_0": "Излекуван!",
+                    "success_1": "Трябва да се чувстваш.. по-добре?",
+                    "success_2": "Напълнен на максимум!",
+                    "success_3": "Болките вече ги няма!"
+                },
+                "everyone": {
+                    "title": "Всички",
+                    "label": "Ще излекува & съживи всички свързани играчи.",
+                    "success": "Всички играчи бяха излекувани и съживени."
+                }
+            },
+            "announcement": {
+                "title": "Изпрати съобщение",
+                "label": "Изпрати съобщение до всички онлайн играчи.",
+                "dialog_desc": "Напиши съобщението което искаш да изпратиш до всички онлайн играчи.",
+                "dialog_placeholder": "Твоето съобщение...",
+                "dialog_success": "Изпращане на съобщение."
+            },
+            "clear_area": {
+                "title": "Рестартирай зона",
+                "label": "Рестартирай специфична зона.",
+                "dialog_desc": "Въведи радиус от който искаш да рестартираш (0-300). Това няма да изтрие неща, които са създадени от сървърът.",
+                "dialog_success": "Изчистване на зона от радиус - %{radius}m",
+                "dialog_error": "Невалиден радиус. Опитай отново."
+            },
+            "player_ids": {
+                "title": "Покзване на ID-та",
+                "label": "Показване на ID-та на играчи (и други неща) над главите на играчите.",
+                "alert_show": "Покзване на ID-та в близост.",
+                "alert_hide": "Скриване на ID-та в близост."
+            }
+        },
+        "page_players": {
+            "misc": {
+                "online_players": "Онлайн играчи",
+                "players": "Играчи",
+                "search": "Търси",
+                "zero_players": "Няма намерени играчи"
+            },
+            "sort": {
+                "label": "Сортирай",
+                "distance": "Дистанция",
+                "id": "ID",
+                "joined_first": "Влязъл първи",
+                "joined_last": "Влязъл последен",
+                "closest": "В близост",
+                "farthest": "В далечност"
+            },
+            "card": {
+                "health": "%{percentHealth}% кръв"
+            }
+        },
+        "player_modal": {
+            "misc": {
+                "error": "Възникна грешка, когато се поитваем да извлечем списъкът с играчи. Грешката е показана по-долу:",
+                "target_not_found": "Не можахме да намерим играч с ИД или име на %{target}"
+            },
+            "tabs": {
+                "actions": "Действия",
+                "info": "Информация",
+                "ids": "ID",
+                "history": "История",
+                "ban": "Забранa"
+            },
+            "actions": {
+                "title": "Административни опции",
+                "command_sent": "Командата успешна!",
+                "moderation": {
+                    "title": "Модериране",
+                    "options": {
+                        "dm": "ЛС",
+                        "warn": "Предупреди",
+                        "kick": "Изритай",
+                        "set_admin": "Дай права"
+                    },
+                    "dm_dialog": {
+                        "title": "ЛС",
+                        "description": "Каква е причината, за изпращане на лично съобщение до играча?",
+                        "placeholder": "Причина...",
+                        "success": "Твоето съобщение беше изпратено!"
+                    },
+                    "warn_dialog": {
+                        "title": "Предупреди",
+                        "description": "Каква е причината, за да предупредиш този играч?",
+                        "placeholder": "Причина...",
+                        "success": "Играчът беше предупреден!"
+                    },
+                    "kick_dialog": {
+                        "title": "Изритай",
+                        "description": "Каква е причината за изгонването на този играч?",
+                        "placeholder": "Причина...",
+                        "success": "Играчът беше изритан от сървъра!"
+                    }
+                },
+                "interaction": {
+                    "title": "Взаимодействие",
+                    "options": {
+                        "heal": "Излекувай",
+                        "go_to": "Отиди до",
+                        "bring": "Доведи",
+                        "spectate": "Наблюдавай",
+                        "toggle_freeze": "Замръзи"
+                    },
+                    "notifications": {
+                        "heal_player": "Излекуване на играч",
+                        "tp_player": "Телепортиране до играч",
+                        "bring_player": "Телепортиране на играч до теб",
+                        "spectate_failed": "Не успешно наблюдаване! Излизане от наблюдение.",
+                        "spectate_yourself": "Не можеш да наблюдаваш себе си.",
+                        "freeze_yourself": "Не можеш да замръзиш себе си."
+                    }
+                },
+                "troll": {
+                    "title": "Трол",
+                    "options": {
+                        "drunk": "Пиян Ефект",
+                        "fire": "Запали",
+                        "wild_attack": "Атака от диви животни"
+                    }
+                }
+            },
+            "info": {
+                "title": "Информация за играч",
+                "session_time": "Игрално време",
+                "play_time": "Цяло игрално Време",
+                "joined": "Влязъл",
+                "whitelisted_label": "Whitelisted",
+                "whitelisted_notyet": "not yet",
+                "btn_wl_add": "ADD WL",
+                "btn_wl_remove": "REMOVE WL",
+                "btn_wl_success": "Whitelist status changed.",
+                "log_label": "Log",
+                "log_empty": "No bans/warns found.",
+                "log_ban_count": "%{smart_count} ban |||| %{smart_count} bans",
+                "log_warn_count": "%{smart_count} warn |||| %{smart_count} warns",
+                "log_btn": "DETAILS",
+                "notes_changed": "Player note changed.",
+                "notes_placeholder": "Notes about this player..."
+            },
+            "history": {
+                "title": "История за Забрани...",
+                "btn_revoke": "REVOKE",
+                "revoked_success": "Action revoked!",
+                "banned_by": "BANNED by %{author}",
+                "warned_by": "WARNED by %{author}",
+                "revoked_by": "Revoked by %{author}.",
+                "expired_at": "Expired at %{date}.",
+                "expires_at": "Expires at %{date}."
+            },
+            "ban": {
+                "title": "Забрани играч",
+                "reason_placeholder": "Причина",
+                "duration_placeholder": "Продължителност",
+                "hours": "Часове",
+                "days": "Дни",
+                "weeks": "Седмици",
+                "months": "Месеци",
+                "permanent": "Перманентно",
+                "custom": "Персонализирано",
+                "helper_text": "Моля избери продължителност",
+                "submit": "Приложи забрана",
+                "reason_required": "The Reason field is required.",
+                "success": "Player banned!"
+            },
+            "ids": {
+                "current_ids": "Current Identifiers",
+                "previous_ids": "Previously Used Identifiers"
+            }
+        }
+    }
+}

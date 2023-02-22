@@ -1,0 +1,350 @@
+{
+    "$meta": {
+        "label": "Greek",
+        "humanizer_language": "el"
+    },
+    "restarter": {
+        "start_timeout": "Απέτυχε η εκκίνηση εντός του χρόνου",
+        "crash_detected": "Βρέθηκε Πρόβλημα",
+        "hang_detected": "hang detected",
+        "partial_hang_warn": "Due to a partial hang, this server will restart in 1 minute. Please disconnect now.",
+        "partial_hang_warn_discord": "Due to a partial hang, **%{servername}** will restart in 1 minute.",
+        "schedule_reason": "Προγραμματισμένη επανεκκίνηση σε %{time}",
+        "schedule_warn": "Αυτός ο διακομιστής έχει προγραμματιμένη επανεκκίνηση σε %{smart_count} λεπτό. Παρακαλώ αποσυνδεθείτε τώρα. |||| Αυτός ο διακομιστής έχει προγραμματισμένη επανεκκίνηση σε %{smart_count} λεπτά.",
+        "schedule_warn_discord": "Ο **%{servername}** έχει προγραμματισμένη επανεκκίνηση σε %{smart_count} λεπτό. |||| Ο **%{servername}** έχει προγραμματιμένη επανεκκίνηση σε %{smart_count} λεπτά."
+    },
+    "ban_messages": {
+        "kick_temporary": "(%{author}) Έχει απαγορευτεί η είσοδος σου στον διακομιστή για: \"%{reason}\". Η απαγορευσή σου θα λήξει σε: %{expiration}.",
+        "kick_permanent": "(%{author}) Έχει απαγορευτεί η είσοδος σου στον διακομιστή για: \"%{reason}\".",
+        "reject": {
+            "title_permanent": "You have been permanently banned from this server.",
+            "title_temporary": "You have been temporarily banned from this server.",
+            "label_expiration": "Your ban will expire in",
+            "label_date": "Ban Date",
+            "label_author": "Banned by",
+            "label_reason": "Ban Reason",
+            "label_id": "Ban ID",
+            "note_multiple_bans": "Note: you have more than one active ban on your identifiers."
+        }
+    },
+    "whitelist_messages": {
+        "admin_only": {
+            "mode_title": "This server is in <strong>Admin-only</strong> mode.",
+            "insufficient_ids": "You do not have <code>discord</code> or <code>fivem</code> identifiers, and at least one of them is required to validate if you are a txAdmin administrator.",
+            "deny_message": "Your identifiers are not assigned to any txAdmin administrator."
+        },
+        "guild_member": {
+            "mode_title": "This server is in <strong>Discord Guild Member Whitelist</strong> mode.",
+            "insufficient_ids": "You do not have the <code>discord</code> identifier, which is required to validate if you have joined our Discord Guild. Please open Discord and try again.",
+            "deny_title": "You are required to join our Discord Guild to connect.",
+            "deny_message": "Please join the guild %{guildname} then try again."
+        },
+        "guild_roles": {
+            "mode_title": "This server is in <strong>Discord Role Whitelist</strong> mode.",
+            "insufficient_ids": "You do not have the <code>discord</code> identifier, which is required to validate if you have joined our Discord Guild. Please open Discord and try again.",
+            "deny_notmember_title": "You are required to join our Discord Guild to connect.",
+            "deny_notmember_message": "Please join %{guildname}, get one of the required roles, then try again.",
+            "deny_noroles_title": "You do not have a whitelisted role required to join.",
+            "deny_noroles_message": "To join this server you are required to have at least one of the whitelisted roles on the guild %{guildname}."
+        },
+        "approved_license": {
+            "mode_title": "This server is in <strong>License Whitelist</strong> mode.",
+            "insufficient_ids": "You do not have the <code>license</code> identifier, which means the server has <code>sv_lan</code> enabled. If you are the server owner, you can disable it in the <code>server.cfg</code> file.",
+            "deny_title": "You are not whitelisted to join this server.",
+            "request_id_label": "Request ID"
+        }
+    },
+    "server_actions": {
+        "restarting": "Επανεκκίνηση διακομιστή με λόγο: (%{reason}).",
+        "restarting_discord": "Εκτελείται επανεκκίνηση του διακομιστή **%{servername}** με λόγο: (%{reason}).",
+        "stopping": "Ο διακομιστής κλείνει με λόγο: (%{reason}).",
+        "stopping_discord": "Ο **%{servername}** κλείνει με λόγο: (%{reason}).",
+        "spawning_discord": "Ο **%{servername}** ανοίγει."
+    },
+    "nui_warning": {
+        "title": "ΠΡΟΕΙΔΟΠΟΙΗΣΗ",
+        "warned_by": "Προειδοποιήθηκες από τον:",
+        "instruction": "Πάτα [SPACE] για 10 δευτερόλεπτα για να απορρίψεις αυτό το μήνυμα."
+    },
+    "nui_menu": {
+        "misc": {
+            "help_message": "To txAdmin Menu ενεργοποιήθηκε, πληκτρολόγησε /tx για να το ανοίξεις.\nΕπίσης μπορείς να καθορίσεις και keybind [Game Settings > Key Bindings > FiveM > Menu: Open Main Page].",
+            "menu_not_allowed": "Τα αναγνωριστικά σου δεν ταιρίαζουν με αυτά κάποιου δηλωμένου Admin στο txAdmin.\nΕαν είσαι δηλωμένος στο txAdmin, πήγαινε στο Admin Manager και επιβεβαίωσε ότι τα αναγνωριστικά σου έχουν αποθηκευτεί.",
+            "no_perms": "Δεν έχεις αυτή την άδεια",
+            "unknown_error": "Προκλήθηκε ένα άγνωστο σφάλμα.",
+            "not_enabled": "Tο txAdmin Menu δεν είναι ενεργοποιημένο ! Μπορείς να το ενεργοποιήσεις στήν σελίδα ρυθμίσεων του txAdmin.",
+            "announcement_title": "Ανακοίνωση από τον %{author}:",
+            "dialog_empty_input": "Δεν μπορείς να μην εισάγεις τίποτα.",
+            "directmessage_title": "DM from admin %{author}:"
+        },
+        "frozen": {
+            "froze_player": "Έχεις παγώσει έναν παίκτη!",
+            "unfroze_player": "Έχεις ξεπαγώσει έναν παίκτη!",
+            "was_frozen": "Έχεις παγώσει άπο έναν Server Admin!"
+        },
+        "common": {
+            "cancel": "Ακύρωση",
+            "submit": "Επιβεβαίωση",
+            "error": "Προκλήθηκε ένα σφάλμα",
+            "copied": "Αντιγράφηκε στο πρόχειρο."
+        },
+        "page_main": {
+            "tooltips": {
+                "tooltip_1": "Χρησιμοποίησε το %{key} για να αλλάξεις σελίδες & και τα βελάκια για να πλοηγηθέις στο Menu",
+                "tooltip_2": "Οι συγκεκριμένες επιλογές στο Menu έχουν και υπό-επιλογές όπου μπορούν να επιλεχθούν από το δεξί και αριστερό βελάκι"
+            },
+            "player_mode": {
+                "title": "Player Mode",
+                "noclip": {
+                    "title": "NoClip",
+                    "label": "Πέτα τριγύρω",
+                    "success": "Το NoClip ενεργοποιήθηκε"
+                },
+                "godmode": {
+                    "title": "God",
+                    "label": "Γίνεσε αόρατος",
+                    "success": "God Mode ενεργοποιήθηκε"
+                },
+                "superjump": {
+                    "title": "Super Jump",
+                    "label": "Toggle super jump mode, the player will also run faster",
+                    "success": "Super Jump enabled"
+                },
+                "normal": {
+                    "title": "Normal",
+                    "label": "Αρχικό mode",
+                    "success": "Επέστρεψες στο αρχικό player mode."
+                }
+            },
+            "teleport": {
+                "title": "Teleport",
+                "generic_success": "Στάλθηκες στη σκουληκότρυπα!",
+                "waypoint": {
+                    "title": "Waypoint",
+                    "label": "Πηγαίνεις στο σημείο που επέλεξες ",
+                    "error": "Δεν έχεις θέσει κάποιο σημείο."
+                },
+                "coords": {
+                    "title": "Coords",
+                    "label": "Πηγαίνεις σε συγκεκριμένες συντεταγμένες",
+                    "dialog_title": "Teleport",
+                    "dialog_desc": "Δώστε συντεταγμένες σε μορφή x, y, z για να περάσετε από τη σκουληκότρυπα.",
+                    "dialog_error": "Λάθος συντεταγμένες. Πρέπει να είναι στην ακόλουθη μορφή: 111, 222, 33"
+                },
+                "back": {
+                    "title": "Back",
+                    "label": "Πηγαίνεις στην τελευταία σου τοποθεσία",
+                    "error": "Δεν έχεις τελευταία τοποθεσία για να πας!"
+                },
+                "copy": {
+                    "title": "Αντιγραφή συντεταγμένων",
+                    "label": "Αντιγραφή συντεταγμένων στο πρόχειρο."
+                }
+            },
+            "vehicle": {
+                "title": "Vehicle",
+                "onesync_error": "Αυτή η επιλογή απαιτεί ο διακομιστής να έχει ενεργοποιημένο OneSync ",
+                "not_in_veh_error": "Δεν είσαι μέσα σε όχημα!",
+                "spawn": {
+                    "title": "Spawn",
+                    "label": "Εμφάνησε όχημα με το όνομα του μοντέλου του",
+                    "dialog_title": "Εμφάνησε όχημα",
+                    "dialog_desc": "Πληκτρολόγησε το όνομα του μοντέλου του οχήματος που θέλεις να εμφανήσεις",
+                    "dialog_success": "Το όχημα εμφανίστηκε!",
+                    "dialog_error": "Το όνομα μοντέλου οχήματος '%{modelName}' δεν υπάρχει!",
+                    "dialog_info": "Προσπάθεια εμφάνησης %{modelName}."
+                },
+                "fix": {
+                    "title": "Fix",
+                    "label": "Φτιάξε το όχημα",
+                    "success": "Το όχημα κατασκευάστηκε!"
+                },
+                "delete": {
+                    "title": "Delete",
+                    "label": "Διέγραψε το όχημα",
+                    "success": "Το όχημα διαγράφτηκε!"
+                },
+                "boost": {
+                    "title": "Boost",
+                    "label": "Boost the car to achieve max fun (and maybe speed)",
+                    "success": "Vehicle boosted!",
+                    "already_boosted": "This vehicle was already boosted.",
+                    "unsupported_class": "This vehicle class is not supported."
+                }
+            },
+            "heal": {
+                "title": "Heal",
+                "myself": {
+                    "title": "Τον ευατό σου",
+                    "label": "Αποκαταστέι την υγεία σου",
+                    "success_0": "Όλα εντάξει!",
+                    "success_1": "Πρέπει να είναι όλα καλά τώρα!",
+                    "success_2": "Αποκαταστήθηκε η ζωή σου εντελώς!",
+                    "success_3": "Φτιάχτηκαν οι γρατζουνίες!"
+                },
+                "everyone": {
+                    "title": "Όλους",
+                    "label": "Θα αποκαταστήσει την υγεία και θα ζωντανέψει όλους του παίκτες!",
+                    "success": "Ζωντάνεψαν όλοι οι παίκτες."
+                }
+            },
+            "announcement": {
+                "title": "Βγάλε ανακοίνωση",
+                "label": "Βγάλε ανακοίνωση προς όλους τους παίκτες.",
+                "dialog_desc": "Βγάλε ανακοίνωση προς όλους τους παίκτες.",
+                "dialog_placeholder": "Η ανακοίνωση σου...",
+                "dialog_success": "Η ανακοίνωση ανέβηκε."
+            },
+            "clear_area": {
+                "title": "Reset World Area",
+                "label": "Επαναφέρετε μια καθορισμένη περιοχή στην προεπιλεγμένη κατάστασή της",
+                "dialog_desc": "Εισαγάγετε την ακτίνα στην οποία θέλετε να επαναφέρετε τις οντότητες σε (0-300). Αυτό δεν θα διαγράψει οντότητες που δημιουργούνται από την πλευρά του διακομιστή.",
+                "dialog_success": "Επαναφέρεται η περιοχή σε ακτίνα %{radius}m",
+                "dialog_error": "Μη έγκυρη είσοδος ακτίνας. Προσπάθησε ξανά."
+            },
+            "player_ids": {
+                "title": "Toggle Player IDs",
+                "label": "Εναλλαγή εμφάνισης αναγνωριστικών παικτών (και άλλων πληροφοριών) πάνω από το κεφάλι όλων των κοντινών παικτών",
+                "alert_show": "Εμφάνιση NetIDs των κοντινών παικτών.",
+                "alert_hide": "Εξαφάνηση NetIDs των κοντινών παικτών."
+            }
+        },
+        "page_players": {
+            "misc": {
+                "online_players": "Online Players",
+                "players": "Παίκτες",
+                "search": "Αναζήτηση",
+                "zero_players": "Δεν βρέθηκαν παίκτες"
+            },
+            "sort": {
+                "label": "Ταξινόμηση κατά",
+                "distance": "Απόστασης",
+                "id": "Αναγνωριστικού",
+                "joined_first": "Joined First",
+                "joined_last": "Joined Last",
+                "closest": "Closest",
+                "farthest": "Farthest"
+            },
+            "card": {
+                "health": "%{percentHealth}% υγεία"
+            }
+        },
+        "player_modal": {
+            "misc": {
+                "error": "Παρουσιάστηκε σφάλμα κατά την ανάκτηση αυτών των στοιχείων του χρήστη. Το σφάλμα φαίνεται παρακάτω:",
+                "target_not_found": "Δεν ήταν δυνατή η εύρεση ενός παίκτη με αναγνωριστικό ή με ψευδώνυμο: %{target}"
+            },
+            "tabs": {
+                "actions": "Actions",
+                "info": "Info",
+                "ids": "IDs",
+                "history": "History",
+                "ban": "Ban"
+            },
+            "actions": {
+                "title": "Επιλογές Παίκτη",
+                "command_sent": "Η επιλογή στάλθηκε!",
+                "moderation": {
+                    "title": "Moderation",
+                    "options": {
+                        "dm": "DM",
+                        "warn": "Warn",
+                        "kick": "Kick",
+                        "set_admin": "Give Admin"
+                    },
+                    "dm_dialog": {
+                        "title": "Προσωπικό μήνυμα",
+                        "description": "Ποιό είναι το προσωπικό μήνυμα που θέλεις να στείλεις",
+                        "placeholder": "Μήνυμα...",
+                        "success": "Το μήνυμα στάλθηκε επιτυχώς!"
+                    },
+                    "warn_dialog": {
+                        "title": "Warn",
+                        "description": "Για πιο λόγο θες να προηδοποιήσεις αυτόν τον παίκτη;",
+                        "placeholder": "Λόγος...",
+                        "success": "Ο παίκτης προηδοποιήθηκε!"
+                    },
+                    "kick_dialog": {
+                        "title": "Kick",
+                        "description": "Ποιός είναι ο λόγος που θέλετε να εκδιώξετε αυτόν παίκτη;",
+                        "placeholder": "Λόγος...",
+                        "success": "Ο παίκτης εκδιώκθηκε!"
+                    }
+                },
+                "interaction": {
+                    "title": "Αλληλεπίδραση",
+                    "options": {
+                        "heal": "Heal",
+                        "go_to": "Go to",
+                        "bring": "Bring",
+                        "spectate": "Spectate",
+                        "toggle_freeze": "Toggle Freeze"
+                    },
+                    "notifications": {
+                        "heal_player": "Healing player",
+                        "tp_player": "Teleporting to player",
+                        "bring_player": "Bring παίκτη",
+                        "spectate_failed": "Failed to resolve the target! Exiting spectate.",
+                        "spectate_yourself": "You cannot spectate yourself.",
+                        "freeze_yourself": "You cannot freeze yourself."
+                    }
+                },
+                "troll": {
+                    "title": "Troll",
+                    "options": {
+                        "drunk": "Κάντον μεθυσμένο",
+                        "fire": "Βάλ'του φωτία",
+                        "wild_attack": "Επίθεση από άγρια ζώα"
+                    }
+                }
+            },
+            "info": {
+                "title": "Πληρφορίες παίκτη",
+                "session_time": "Τωρινός Online χρόνος",
+                "play_time": "Συνολικός Online χρόνος",
+                "joined": "Joined",
+                "whitelisted_label": "Whitelisted",
+                "whitelisted_notyet": "not yet",
+                "btn_wl_add": "ADD WL",
+                "btn_wl_remove": "REMOVE WL",
+                "btn_wl_success": "Whitelist status changed.",
+                "log_label": "Log",
+                "log_empty": "No bans/warns found.",
+                "log_ban_count": "%{smart_count} ban |||| %{smart_count} bans",
+                "log_warn_count": "%{smart_count} warn |||| %{smart_count} warns",
+                "log_btn": "DETAILS",
+                "notes_changed": "Player note changed.",
+                "notes_placeholder": "Notes about this player..."
+            },
+            "history": {
+                "title": "Related history",
+                "btn_revoke": "REVOKE",
+                "revoked_success": "Action revoked!",
+                "banned_by": "BANNED by %{author}",
+                "warned_by": "WARNED by %{author}",
+                "revoked_by": "Revoked by %{author}.",
+                "expired_at": "Expired at %{date}.",
+                "expires_at": "Expires at %{date}."
+            },
+            "ban": {
+                "title": "Ban player",
+                "reason_placeholder": "Λόγος",
+                "duration_placeholder": "Διάρκεια",
+                "hours": "ώρες",
+                "days": "μέρες",
+                "weeks": "εβδομάδες",
+                "months": "μήνες",
+                "permanent": "Μόνιμα",
+                "custom": "Custom",
+                "helper_text": "Παρακαλώ διαλέξτε διάρκεια",
+                "submit": "Apply ban",
+                "reason_required": "The Reason field is required.",
+                "success": "Player banned!"
+            },
+            "ids": {
+                "current_ids": "Current Identifiers",
+                "previous_ids": "Previously Used Identifiers"
+            }
+        }
+    }
+}

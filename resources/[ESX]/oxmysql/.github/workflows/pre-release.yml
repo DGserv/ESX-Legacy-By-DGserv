@@ -1,0 +1,54 @@
+name: Pre-Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Version tag'
+        required: true
+
+jobs:
+  create-release:
+    name: Build and Create Tagged Pre release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install archive tools
+        run: sudo apt install zip
+
+      - name: Checkout source code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref }}
+
+      - name: Install dependencies
+        run: pnpm i
+
+      - name: Run build
+        run: pnpm build
+
+      - name: Bundle files
+        run: |
+          mkdir -p ./temp/oxmysql
+          mkdir -p ./temp/oxmysql/ui/
+          mkdir -p ./temp/oxmysql/lib/
+          cp ./{LICENSE,README.md,fxmanifest.lua,ui.lua} ./temp/oxmysql
+          cp ./lib/{MySQL.lua,define.lua} ./temp/oxmysql/lib
+          cp -r ./dist ./temp/oxmysql
+          cp -r ./ui/build ./temp/oxmysql/ui/
+          cd ./temp && zip -r ../oxmysql.zip ./oxmysql
+
+      - name: Create Release
+        uses: 'marvinpinto/action-automatic-releases@v1.2.1'
+        id: auto_release
+        with:
+          repo_token: '${{ secrets.GITHUB_TOKEN }}'
+          title: 'Experimental - ${{ github.event.inputs.tag }} (FOR TESTING PURPOSE)'
+          prerelease: true
+          automatic_release_tag: '${{ github.event.inputs.tag }}'
+          files: oxmysql-${{ github.event.inputs.tag }}.zip
+
+        env:
+          CI: false
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
