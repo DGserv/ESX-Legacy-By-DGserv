@@ -1,5 +1,5 @@
-# esx-legacy1.9.2
-ESX-Legacy 1.9.2 By DGserv
+# esx-legacy1.9.3
+ESX-Legacy 1.9.3 By DGserv
 
 Artifact FiveM
 Pour windows : https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/
@@ -11,8 +11,8 @@ https://keymaster.fivem.net/
 Steam API Key
 https://steamcommunity.com/dev/registerkey
 
-Base ESX-Legacy 1.9.2 By DGserv
-https://github.com/DGserv/ESX-Legacy-1.9.2-By-DGserv
+Base ESX-Legacy 1.9.3 By DGserv
+https://github.com/DGserv/ESX-Legacy-1.9.3-By-DGserv
 
 Notre Discord
 https://discord.gg/nNkqTXCs8t
