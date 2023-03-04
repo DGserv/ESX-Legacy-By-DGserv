@@ -51,27 +51,29 @@ Config.Hospitals = {
 	CentralLosSantos = {
 
 		Blip = {
-			coords = vector3(-454.8422, -340.1054, 34.3634),
+			coords = vector3(307.7, -1433.4, 28.9),
 			sprite = 61,
 			scale  = 1.2,
 			color  = 2
 		},
 
 		AmbulanceActions = {
-			vector3(-444.2060, -310.1361, 33.9106)
+			vector3(270.5, -1363.0, 23.5)
 		},
 
 		Pharmacies = {
-			vector3(-452.2343, -324.7879, 33.9108)
+			vector3(230.1, -1366.1, 38.5)
 		},
 
 		Vehicles = {
 			{
-				Spawner = vector3(-448.5986, -337.6425, 34.5018),
+				Spawner = vector3(307.7, -1433.4, 30.0),
 				InsideShop = vector3(446.7, -1355.6, 43.5),
 				Marker = {type = 36, x = 1.0, y = 1.0, z = 1.0, r = 100, g = 50, b = 200, a = 100, rotate = true},
 				SpawnPoints = {
-					{coords = vector3(-454.1313, -333.0265, 34.3661), heading = 81.8807, radius = 4.0}
+					{coords = vector3(297.2, -1429.5, 29.8), heading = 227.6, radius = 4.0},
+					{coords = vector3(294.0, -1433.1, 29.8), heading = 227.6, radius = 4.0},
+					{coords = vector3(309.4, -1442.5, 29.8), heading = 227.6, radius = 6.0}
 				}
 			}
 		},

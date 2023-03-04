@@ -105,11 +105,11 @@ function OpenCloakroom()
 
     ESX.OpenContext("right", elements, function(menu,element)
         if element.value == "wear_citizen" then
-            TriggerServerCallback('esx_skin:getPlayerSkin', function(skin)
+            ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin)
                 TriggerEvent('skinchanger:loadSkin', skin)
             end)
         elseif element.value == "wear_work" then
-            TriggerServerCallback('esx_skin:getPlayerSkin', function(skin, jobSkin)
+            ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin, jobSkin)
                 if skin.sex == 0 then
                     TriggerEvent('skinchanger:loadClothes', skin, jobSkin.skin_male)
                 else
@@ -130,7 +130,7 @@ function OpenVehicleSpawnerMenu()
     }
 
     if Config.EnableSocietyOwnedVehicles then
-        TriggerServerCallback('esx_society:getVehiclesInGarage', function(vehicles)
+        ESX.TriggerServerCallback('esx_society:getVehiclesInGarage', function(vehicles)
 
             for i = 1, #vehicles, 1 do
                 elements[#elements+1] = {
@@ -147,10 +147,11 @@ function OpenVehicleSpawnerMenu()
                 end
 
                 local vehicleProps = element.value
-                TriggerServerCallback("esx_taxijob:SpawnVehicle", function()
+                ESX.TriggerServerCallback("esx_taxijob:SpawnVehicle", function()
                     return
                 end, vehicleProps.model, vehicleProps)
                 TriggerServerEvent('esx_society:removeVehicleFromGarage', 'taxi', vehicleProps)
+                ESX.CloseContext()
             end, function(menu)
                 CurrentAction = 'vehicle_spawner'
                 CurrentActionMsg = TranslateCap('spawner_prompt')
@@ -163,9 +164,10 @@ function OpenVehicleSpawnerMenu()
                 ESX.ShowNotification(TranslateCap('spawnpoint_blocked'))
                 return
             end
-            TriggerServerCallback("esx_taxijob:SpawnVehicle", function()
+            ESX.TriggerServerCallback("esx_taxijob:SpawnVehicle", function()
                 ESX.ShowNotification(TranslateCap('vehicle_spawned'), "success")
             end, "taxi", {plate = "TAXI JOB"})
+            ESX.CloseContext()
         end, function(menu)
             CurrentAction = 'vehicle_spawner'
             CurrentActionMsg = TranslateCap('spawner_prompt')
@@ -308,7 +310,7 @@ function IsInAuthorizedVehicle()
 end
 
 function OpenGetStocksMenu()
-    TriggerServerCallback('esx_taxijob:getStockItems', function(items)
+    ESX.TriggerServerCallback('esx_taxijob:getStockItems', function(items)
         local elements = {
             {unselectable = true, icon = "fas fa-box", title = TranslateCap('taxi_stock')}
         }
@@ -351,7 +353,7 @@ function OpenGetStocksMenu()
 end
 
 function OpenPutStocksMenu()
-    TriggerServerCallback('esx_taxijob:getPlayerInventory', function(inventory)
+    ESX.TriggerServerCallback('esx_taxijob:getPlayerInventory', function(inventory)
         local elements = {
             {unselectable = true, icon = "fas fa-box", title = TranslateCap('inventory')}
         }

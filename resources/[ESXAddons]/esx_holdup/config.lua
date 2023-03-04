@@ -7,8 +7,8 @@ Config.Marker = {
 	DrawDistance = 15.0, Type = 1    -- default circle type, low draw distance due to indoors area
 }
 
-Config.PoliceNumberRequired = 0
-Config.TimerBeforeNewRob    = 180 -- The cooldown timer on a store after robbery was completed / canceled, in seconds
+Config.PoliceNumberRequired = 2
+Config.TimerBeforeNewRob    = 1800 -- The cooldown timer on a store after robbery was completed / canceled, in seconds
 
 Config.MaxDistance    = 20   -- max distance from the robbary, going any longer away from it will to cancel the robbary
 Config.GiveBlackMoney = true -- give black money? If disabled it will give cash instead

@@ -1,7 +1,7 @@
 Config = {}
 
 -------- Note: Can Cause quite abit of clutter ---------------
-Config.ForSaleBlips = true -- Add Blips to For Sale Properties
+Config.ForSaleBlips = false -- Add Blips to For Sale Properties
 Config.OwnedBlips = true -- Add blips for Owned Properties
 ---------------------------------------------------------------
 
@@ -153,7 +153,7 @@ end
 
 --------------------- Real Estate Settings ----------
 Config.PlayerManagement = {                          
-  Enabled = true, -- Enable/Disable Player Management Default: true
+  Enabled = false, -- Enable/Disable Player Management Default: true
   job = "realestateagent", -- Job Required to Manage Players Default: "realestateagent"                 
   joblabel = "Estate Agent", -- Job Label Default: "Estate Agent"          
   society = "society_realestateagent", -- Society Required to Manage Players Default: "society_realestateagent"

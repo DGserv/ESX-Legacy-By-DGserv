@@ -66,8 +66,6 @@ AddEventHandler('esx_vehicleshop:setVehicleOwnedPlayerId', function(playerId, ve
 					xPlayer.showNotification(TranslateCap('vehicle_set_owned', vehicleProps.plate, xTarget.getName()))
 					xTarget.showNotification(TranslateCap('vehicle_belongs', vehicleProps.plate))
 				end)
-                                               MySQL.insert('INSERT INTO open_car (identifier, label, value, got, NB) VALUES (?, ?, ?, ?, ?)', {xTarget.identifier, 'Cles', vehicleProps.plate, 'true', '1'})
-
 
 				MySQL.insert('INSERT INTO vehicle_sold (client, model, plate, soldby, date) VALUES (?, ?, ?, ?, ?)', {xTarget.getName(), label, vehicleProps.plate, xPlayer.getName(), os.date('%Y-%m-%d %H:%M')})
 			end

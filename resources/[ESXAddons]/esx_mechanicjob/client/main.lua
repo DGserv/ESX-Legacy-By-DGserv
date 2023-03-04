@@ -255,10 +255,8 @@ function OpenMobileMechanicActionsMenu()
 					if closestPlayer == -1 or closestDistance > 3.0 then
 						ESX.ShowNotification(TranslateCap('no_players_nearby'), "error")
 					else
-						
+						menu.close()
 						TriggerServerEvent('esx_billing:sendBill', GetPlayerServerId(closestPlayer), 'society_mechanic', TranslateCap('mechanic'), amount)
-                                              ESX.CloseContext()
-
 					end
 				end
 			end)

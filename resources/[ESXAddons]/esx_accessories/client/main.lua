@@ -215,7 +215,7 @@ CreateThread(function()
 			ESX.ShowHelpNotification(CurrentActionMsg)
 
 			if IsControlJustReleased(0, 38) and CurrentActionData.accessory then
-				--OpenShopMenu(CurrentActionData.accessory)
+				OpenShopMenu(CurrentActionData.accessory)
 				CurrentAction = nil
 			end
 		end
@@ -226,9 +226,9 @@ end)
 if Config.EnableControls then
 	RegisterCommand("accessory", function(src)
 		if not ESX.PlayerData.dead then
-			--OpenAccessoryMenu()
+			OpenAccessoryMenu()
 		end
 	end)
 
-	--RegisterKeyMapping("accessory", "Open Accessory Menu", "keyboard", "k")
+	RegisterKeyMapping("accessory", "Open Accessory Menu", "keyboard", "k")
 end
